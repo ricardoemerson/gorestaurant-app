@@ -66,12 +66,12 @@ const Dashboard: React.FC = () => {
         },
       });
 
-      const foodFormatted = data.map((food: Food) => ({
+      const foodsFormatted = data.map((food: Food) => ({
         ...food,
         formattedPrice: formatValue(food.price),
       }));
 
-      setFoods(foodFormatted);
+      setFoods(foodsFormatted);
     }
 
     loadFoods();
